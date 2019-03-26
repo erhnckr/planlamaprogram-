@@ -1,0 +1,114 @@
+import java.util.Scanner;
+
+public class ornek{
+    
+
+	public static void main(String[] args) {
+		
+		Scanner scan = new Scanner(System.in);
+		int i=0;
+		int j=0;
+        String program = null;
+    	   System.out.println("1:Etkinlikleri göster");
+    	   System.out.println("2:Etkinlik ekle");
+    	   System.out.println("3:Çıkış");
+    	   int s =scan.nextInt();
+    	   for(int h=0;h<100;h++) {
+    	   
+    	   if(s==1) {
+    		  
+    	   }
+    		
+    		    
+    	   
+    	   if(s==2) {
+    		  System.out.println("Plan gir");
+    		   program=scan.nextLine();
+    		   String[] liste = new String[100];
+    		   liste[i]=program;
+    		   System.out.println("  "+liste[h]);
+    		   s=0;
+    		 }
+    	   if(s==3) {
+    		   break;
+    	   }
+    	   }
+		
+		System.out.println("Ayı girin Ardından günü girin");
+	String	 alinancevap = scan.nextLine();
+		 int ayDegeri =scan.nextInt();
+        int gun =scan.nextInt();
+       
+        String ayDegeriStr = null;
+        System.out.println("Ayı girin Ardından günü girin  \n\n" + alinancevap);
+        
+        
+        switch(ayDegeri) {
+            case 1:
+                ayDegeriStr = "Ocak";
+                
+                
+                break;
+            case 2:
+                ayDegeriStr = "Şubat";
+                break;
+            case 3:
+                ayDegeriStr = "Mart";
+                break;
+            case 4:
+                ayDegeriStr = "Nisan";
+                break;
+            case 5:
+                ayDegeriStr = "Mayıs";
+                break;
+            case 6:
+                ayDegeriStr = "Haziran";
+                break;
+            case 7:
+                ayDegeriStr = "Temmuz";
+                break;
+            case 8:
+                ayDegeriStr = "Ağustos";
+                break;
+            case 9:
+                ayDegeriStr = "Eylül";
+                break;
+            case 10:
+                ayDegeriStr = "Ekim";
+                break;
+            case 11:
+                ayDegeriStr = "Kasım";
+                break;
+            case 12:
+                ayDegeriStr = "Aralık";
+                break;
+            default:
+                break;
+        }
+        int z=0;
+       
+        System.out.print("Seçilen Ay: " +ayDegeriStr); 
+  System.out.println("\nSeçilen Gün Değeri: " + gun);
+        System.out.println("Pzt Sa Çar Per Cu Cmt Pz");
+  for(int k=1;k<=30;k++) {
+	  if(k==gun) {
+		  System.out.print("(");
+	  }
+	  if(k==gun+1) {
+		  System.out.print(")");
+
+	  }
+        	System.out.print("  "+k);
+        	z++;
+		if(z==6) {
+			System.out.println("\n");
+			z=0;
+       
+		
+		
+	}     
+    }
+	
+	
+	}
+}
